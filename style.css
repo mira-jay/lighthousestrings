@@ -94,25 +94,27 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive for smaller screens */
 @media (max-width: 768px) {
   
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 
-.hero p {
-  font-weight: 100;
-  font-size: 1.7rem;
-  opacity: 0.9;
-}
-  
-  .about-image img {
-    max-width: 100%;
-    margin-bottom: 20px;
+  .hero p {
+    font-weight: 100;
+    font-size: 1.5rem;
+    opacity: 0.9;
   }
   
-  .about-text h2 {
-    font-size: 2rem;
+  .logo img {
+    height: 80px;
   }
+
+  .nav-links a {
+    margin-left: 15px;
+    font-size: 1rem;
+  }
+    
+
 }
 
 /* ABOUT US SECTION */
@@ -178,11 +180,11 @@ h1, h2, h3, h4, h5, h6 {
   
   .about-image img {
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .about-text h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -387,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .carousel-image-wrapper { height: 320px; } /* smaller phones */
-  .insta-text h2 { font-size: 1.8rem; }       /* reduce headline */
+  .insta-text h2 { font-size: 2.5rem; }       /* reduce headline */
   .insta-text p  { font-size: 1rem; }
 }
 
