@@ -91,6 +91,31 @@ h1, h2, h3, h4, h5, h6 {
   color: #b4dbea; /* or any hover color you like */
 }
 
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-weight: 100;
+  font-size: 1.7rem;
+  opacity: 0.9;
+}
+  
+  .about-image img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ABOUT US SECTION */
 
 .about-us {
   display: flex;
