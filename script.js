@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const images = [
   { src: "photo1.jpeg", caption: "September 2024 – Under the Stars" },
-  { src: "images/photo2.jpeg", caption: "October 2024 – Trouvaille Memory Care" },
-  { src: "images/photo3.jpeg", caption: "December 2024 – Santa Brunch" },
-  { src: "images/photo4.jpeg", caption: "December 2024 – Trouvaille Memory Care" },
-  { src: "images/photo5.jpeg", caption: "December 2024 – Santa Brunch" },
-  { src: "images/photo6.jpeg", caption: "April 2025 – Black Gown Gala" },
-  { src: "images/photo7.jpeg", caption: "April 2025 – Excelsior Firehouse" },
-  { src: "images/photo8.jpeg", caption: "June 2025 – Trouvaille Memory Care" },
-  { src: "images/photo9.jpeg", caption: "July 2025 – Excelsior Commons" }
+  { src: "photo2.jpeg", caption: "October 2024 – Trouvaille Memory Care" },
+  { src: "photo3.jpeg", caption: "December 2024 – Santa Brunch" },
+  { src: "photo4.jpeg", caption: "December 2024 – Trouvaille Memory Care" },
+  { src: "photo5.jpeg", caption: "December 2024 – Santa Brunch" },
+  { src: "photo6.jpeg", caption: "April 2025 – Black Gown Gala" },
+  { src: "photo7.jpeg", caption: "April 2025 – Excelsior Firehouse" },
+  { src: "photo8.jpeg", caption: "June 2025 – Trouvaille Memory Care" },
+  { src: "photo9.jpeg", caption: "July 2025 – Excelsior Commons" }
 ];
 
 let currentIndex = 0;
