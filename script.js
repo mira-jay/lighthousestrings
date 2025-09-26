@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const images = [
-  { src: "images/photo1.jpeg", caption: "September 2024 – Under the Stars" },
+  { src: "photo1.jpeg", caption: "September 2024 – Under the Stars" },
   { src: "images/photo2.jpeg", caption: "October 2024 – Trouvaille Memory Care" },
   { src: "images/photo3.jpeg", caption: "December 2024 – Santa Brunch" },
   { src: "images/photo4.jpeg", caption: "December 2024 – Trouvaille Memory Care" },
