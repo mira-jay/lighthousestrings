@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lighthouse Strings</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=WindSong&family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">
+    <img src="transparent_logo.png" alt="My Logo" />
+  </div>
+  <nav class="nav-links">
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#insta">Past Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+   </ul>
+    
+  </nav>
+</header>
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Lighthouse Strings</h1>
+      <p>Minnetonka, Minnesota</p>
+    </div>
+  </div>
+
+<section id="about" class="about-us fade-in">
+  <div class="about-image">
+    <img src="june.jpeg" alt="Our Group Photo" />
+  </div>
+  <div class="about-text">
+    <h2>About Us</h2>
+    <p>
+      Our mission is to spread joy in our community through music.
+    </p>
+  </div>
+</section>
+
+<section id="insta" class="past-events fade-in">
+  <div class="insta-bg"></div> <!-- gray background -->
+  <div class="insta-content">
+    <div class="insta-text">
+      <h2>Past Events</h2>
+      <p>
+	Here are some memories from past events, bringing people together through the joy of music!
+      </p>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-image-wrapper">
+        <a href="https://www.instagram.com/lighthouse_strings/" target="_blank">
+          <img id="carousel-img" src="" alt="Instagram post" />
+        </a>
+        <p id="carousel-caption" class="caption"></p>
+  
+        <!-- Arrows -->
+        <button class="carousel-arrow left" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="carousel-arrow right" onclick="changeSlide(1)">&#10095;</button>
+     </div> 
+    </div>
+  </div>
+</section>
+
+<section id="upcoming-events" class="upcoming-events-section fade-in">
+  <div class="events-container">
+    <h2>Upcoming Events</h2>
+    <div class="events-cards-wrapper">
+      <!-- Event Card 1 -->
+      <div class="event-card">
+        <p class="event-date">September 25, 2025</p>
+        <h3 class="event-title">Under the Stars</h3>
+        <p class="event-time">5:00 PM - 6:00 PM</p>
+        <p class="event-location">
+          <a href="https://maps.app.goo.gl/A2j7jxAmMN8XAdQQA" target="_blank">Camp Fire</a>
+        </p>
+      </div>
+      <!-- Event Card 2 -->
+      <div class="event-card">
+        <p class="event-date">October 3, 2025</p>
+        <h3 class="event-title">Boom Island Brewing</h3>
+        <p class="event-time">3:00 PM - 5:00 PM</p>
+        <p class="event-location">
+          <a href="https://maps.app.goo.gl/b3HHLSVT1KzixpYQ8" target="_blank">Boom Island Brewing</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Whether you have a question, a performance opportunity, or just want to say hello, reach out below.</p>
+    </div>
+      <div id="form-wrapper">
+        <form id="contact-form" action="https://formspree.io/f/movngbyb" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="thank-you-message" style="display: none; text-align: center; padding: 2rem;">
+        <h2>Thanks for reaching out!</h2>
+        <p>We'll get back to you as soon as we can.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="other-contact-methods">
+  <h3>Other Ways to Contact Us</h3>
+  <a href="mailto:lighthousestrings@gmail.com" class="contact-icon" aria-label="Email Us">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="https://www.instagram.com/lighthouse_strings/" target="_blank" rel="noopener" class="contact-icon" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
