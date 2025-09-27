@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px 10px 10px 10px;
   box-sizing: border-box;
   z-index: 10;
-  margin-top: -8px; /* removes the tiny white gap */
+  margin-top: 0 auto; /* removes the tiny white gap */
 }
 
 .carousel-arrow {
