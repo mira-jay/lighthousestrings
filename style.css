@@ -108,10 +108,23 @@ h1, h2, h3, h4, h5, h6 {
   .logo img {
     height: 80px;
   }
+ 
+  .navbar {
+    flex-direction: column;      /* stack logo and links */
+    align-items: center;
+    padding: 20px;               /* less side padding */
+  }
+
+  .nav-links ul {
+    flex-direction: column;      /* vertical links */
+    align-items: center;
+    gap: 15px;                   /* spacing between links */
+    margin-top: 15px;            /* space under logo */
+  }
 
   .nav-links a {
-    margin-left: 15px;
-    font-size: 1rem;
+    margin: 0;                   /* remove left margin */
+    font-size: 1.1rem;           /* slightly smaller for mobile */
   }
     
 
@@ -580,9 +593,26 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .contact-info h2 {
-    font-size: 2.5rem;
+    font-size: 2.5rem;   /* smaller header */
   }
 
+  .contact-info p {
+    font-size: 1.1rem;   /* inner text */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;       /* slightly less padding */
+    font-size: 0.95rem;  /* slightly smaller text inside boxes */
+    width: 95%;          /* reduce bounding box width */
+    margin: 0 auto;      /* keep centered */
+  }
+
+  .contact-form button {
+    font-size: 1.1rem;   /* match smaller inputs */
+    padding: 10px 18px;  /* slightly smaller button */
+    width: 95%;          /* align with inputs */
+  }
 }
 
 
