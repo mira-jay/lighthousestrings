@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   position: relative;
   width: 100%;
-  height: 520px;
+  height: auto; /*previously 520px*/
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -327,6 +327,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px 10px 10px 10px;
   box-sizing: border-box;
   z-index: 10;
+  /*margin-top: -4px; /* removes the tiny white gap */
 }
 
 .carousel-arrow {
@@ -384,14 +385,36 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
 
-  .carousel-container {
-    width: 100%;
-  }
 
-  .carousel-image-wrapper { height: 320px; } /* smaller phones */
   .insta-text h2 { font-size: 2.5rem; }       /* reduce headline */
   .insta-text p  { font-size: 1rem; }
+
+  
+  .carousel-container {
+    width: 100%;
+    height: auto;         /* let height shrink naturally */
+    padding: 0;           /* remove extra padding */
+  }
+
+  .carousel-image-wrapper {
+    width: 100%;
+    height: auto;         /* important: don't force a fixed height */
+  }
+
+  .carousel-image-wrapper img {
+    width: 100%;
+    height: auto;         /* keeps correct aspect ratio */
+    object-fit: cover;    /* crop nicely if needed */
+    display: block;
+  }
+
+  .caption {
+    position: static;     /* let it sit directly under the image */
+    /*margin-top: -4px;     /* tiny negative margin to remove any gap */
+    border-radius: 0 0 10px 10px;
+  }
 }
+
 
 /* UPCOMING EVENTS */
 
