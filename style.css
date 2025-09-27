@@ -428,6 +428,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .caption {
+    font-size: 0.8rem; /* smaller caption text */
     position: absolute;     /* let it sit directly under the image */
     margin-top: -4px;     /* tiny negative margin to remove any gap */
     border-radius: 0 0 10px 10px;
