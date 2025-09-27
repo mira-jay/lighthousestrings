@@ -110,16 +110,17 @@ h1, h2, h3, h4, h5, h6 {
   }
  
   .navbar {
-    flex-direction: column;      /* stack logo and links */
-    align-items: center;
-    padding: 20px;               /* less side padding */
+    flex-direction: row;         /* keep a row for logo vs links */
+    justify-content: space-between;
+    align-items: flex-start;     /* top align */
+    padding: 20px;             /* less side padding */
   }
 
   .nav-links ul {
     flex-direction: column;      /* vertical links */
-    align-items: center;
-    gap: 15px;                   /* spacing between links */
-    margin-top: 15px;            /* space under logo */
+    align-items: flex-end;    /* right align */
+    gap: 12px;                   /* spacing between links */
+    margin: 0;            /* space under logo */
   }
 
   .nav-links a {
@@ -167,6 +168,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive for larger screens */
 @media (min-width: 1024px) {
   .about-text h2 {
+    margin-top: 10px;   /* ↓ decrease top space above title */
+    /*margin-bottom: 20px;/* adjust below if needed */
     font-size: 4.5rem;      /* bigger heading */
   }
 
@@ -193,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .about-image img {
     max-width: 100%;
-    margin-bottom: 0 auto; /*previously 10px*/
+    margin-bottom: 10 px; /*previously 10px*/
   }
   
   .about-text h2 {
@@ -519,7 +522,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .event-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .event-time, .event-location, .event-date {
@@ -592,6 +595,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  .contact-container {
+    width: 90%;               /* keep away from screen edge */
+    padding: 0 10px;           /* inner breathing room */
+  }
+  
   .contact-info h2 {
     font-size: 2.5rem;   /* smaller header */
   }
@@ -602,16 +610,17 @@ h1, h2, h3, h4, h5, h6 {
 
   .contact-form input,
   .contact-form textarea {
-    padding: 12px;       /* slightly less padding */
     font-size: 0.95rem;  /* slightly smaller text inside boxes */
-    width: 95%;          /* reduce bounding box width */
+    max-width: 90%;          /* reduce bounding box width */
     margin: 0 auto;      /* keep centered */
   }
 
   .contact-form button {
     font-size: 1.1rem;   /* match smaller inputs */
     padding: 10px 18px;  /* slightly smaller button */
-    width: 95%;          /* align with inputs */
+    max-width: 50%;          /* align with inputs */
+    margin: 0 auto;
+    display: block;  /* center button */
   }
 }
 
@@ -645,7 +654,11 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-
+@media (max-width: 768px) {
+  .other-contact-methods {
+    padding: 1rem;
+  }
+}
 
 
 /* Hidden by default */
