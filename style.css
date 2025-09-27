@@ -506,6 +506,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .event-title {
+    font-size: 2rem;
+  }
+
+  .event-time, .event-location, .event-date {
     font-size: 1.1rem;
   }
 }
