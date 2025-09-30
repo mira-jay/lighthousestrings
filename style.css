@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-container img{
   position: relative;
   max-width: 100%;
-  max-height: 1000px; /* Or whatever works best visually */
+  max-height: 100px; /* Or whatever works best visually */
   object-fit: contain;
   margin-bottom: 0.5rem;
   border-radius: 10px;
