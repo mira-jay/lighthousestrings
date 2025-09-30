@@ -232,12 +232,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .insta-content {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   max-width: 1400px;
   width: 90%;
   margin: 0 auto; 
   padding: 0;
-  align-items: center;
+  align-items: stretch;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -245,7 +246,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .insta-text {
   flex: 0 0 38%;
+  text-align: left;
 }
+
 
 .insta-text h2 {
   font-size: 3rem;
@@ -258,14 +261,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-container { 
-  display: flex;
+  display: block;
   flex-direction: column;
   flex: 0 0 60%;
   align-items: center;
   justify-content: center;
   background-color: transparent;
   overflow: hidden;
-  padding: 1rem;
+  padding: 0;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
@@ -275,6 +278,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: none;
   height: 700px; /*previously 700px*/
 }
+
 
 .carousel-container img{
   position: relative;
@@ -286,6 +290,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: opacity 0.5s ease;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
 
 .carousel-image {
   position: relative;
@@ -305,7 +310,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel-image-wrapper {
   flex: 1;
-  display: flex;
+  display: block;
   align-items: center;
   position: relative;
   width: 100%;
