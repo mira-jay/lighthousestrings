@@ -342,11 +342,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   opacity: 1;
   transition: opacity 1s ease-in-out;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 0px 0px 10px 10px; /* used to be 10 all */
   box-sizing: border-box;
   z-index: 10;
-  margin-top: 0 auto; /* removes the tiny white gap */
+  margin-top: -4px; /* removes the tiny white gap */
 }
+
 
 .carousel-arrow {
   position: absolute;
